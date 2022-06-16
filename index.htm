@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gueesing  Game</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+               <br>
+            </div>
+            <div class="col-12 text-center bg-primary text-white shadow rounded ">
+                <h1> 
+                    <!-- <span class="mr-5"><i class="fa fa-trophy" aria-hidden="true"></i></span> -->
+                    Check your Guess</h1>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 mt-5">
+                <div class="help">
+                    <p><i class="fa fa-arrow-right" aria-hidden="true"></i>অনুমান সঠিক করার জন্য ০-৯ পর্যন্ত যে কোন একটি সংখ্যা বেছে নিন ।</p>
+                    <p><i class="fa fa-arrow-right" aria-hidden="true"></i>পাঁচ বার পর্যন্ত দিতে থাকুন।  <span id="load-page"></span></p> 
+                </div>
+                    <div class="input-group mb-5">
+                        <input type="text" class="form-control text-center" id="take-digit" placeholder="Enter Digit Here">
+                        <div class="input-group-append">
+                           &nbsp;&nbsp; <button class="btn btn-info" onclick="handleBtn()" id="guess-btn">Guess Digit</button>
+                        </div>
+                      </div>                 
+
+                <div class="result-group mt-5">
+                    <ul class="list-group" id="result-list"></ul>
+                      
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 mt-5">
+                
+                <h2>Guessing Score</h2>
+                <h5 class="mt-3"><span>Correct Guess : <button id="correctScore" class="btn btn-success"></button></span> <span> Wrong Guess : <button id="wrongScore" class="btn btn-danger"></button></span></h4>
+                <div class="progress mt-3">
+                    <div class="progress-bar progress-bar-striped bg-info" id="correct-progress" role="progressbar" style="width: 100%;" aria-valuenow="" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="progress mt-3 mb-5">
+                    <div class="progress-bar progress-bar-striped bg-danger" id="wrong-progress" role="progressbar" style="width: 100%;"  aria-valuenow="" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div>
+                      
+                      <!-- <img id="image" class="img-responsive"> -->
+                      
+                  </div>
+                  
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
